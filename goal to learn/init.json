@@ -1,0 +1,31 @@
+[
+  { "id": 1, "x": 250, "y": 150, "label": "Prefrontal Cortex", "group": "Logic" },
+  { "id": 2, "x": 300, "y": 180, "label": "Decision Center", "group": "Logic" },
+  { "id": 3, "x": 280, "y": 220, "label": "Working Memory", "group": "Logic" },
+  { "id": 4, "x": 350, "y": 140, "label": "Social Behavior", "group": "Logic" },
+  { "id": 5, "x": 320, "y": 250, "label": "Personality Core", "group": "Logic" },
+
+  { "id": 6, "x": 480, "y": 250, "label": "Primary Motor", "group": "Motor" },
+  { "id": 7, "x": 520, "y": 210, "label": "Premotor Area", "group": "Motor" },
+  { "id": 8, "x": 450, "y": 300, "label": "Coordination", "group": "Motor" },
+  { "id": 9, "x": 550, "y": 280, "label": "Speech Output", "group": "Motor" },
+  { "id": 10, "x": 500, "y": 350, "label": "Reflex Arc", "group": "Motor" },
+
+  { "id": 11, "x": 650, "y": 350, "label": "Primary Somatosensory", "group": "Sensory" },
+  { "id": 12, "x": 700, "y": 320, "label": "Pain Receptors", "group": "Sensory" },
+  { "id": 13, "x": 620, "y": 400, "label": "Thermal Sensors", "group": "Sensory" },
+  { "id": 14, "x": 750, "y": 380, "label": "Tactile Feedback", "group": "Sensory" },
+  { "id": 15, "x": 680, "y": 450, "label": "Proprioception", "group": "Sensory" },
+
+  { "id": 16, "x": 850, "y": 480, "label": "Primary Visual", "group": "Visual" },
+  { "id": 17, "x": 900, "y": 450, "label": "Color Processing", "group": "Visual" },
+  { "id": 18, "x": 820, "y": 550, "label": "Motion Detection", "group": "Visual" },
+  { "id": 19, "x": 950, "y": 520, "label": "Facial Recognition", "group": "Visual" },
+  { "id": 20, "x": 880, "y": 600, "label": "Depth Perception", "group": "Visual" },
+
+  { "id": 21, "x": 550, "y": 550, "label": "Hippocampus", "group": "Memory" },
+  { "id": 22, "x": 600, "y": 520, "label": "Amygdala", "group": "Memory" },
+  { "id": 23, "x": 520, "y": 620, "label": "Episodic Storage", "group": "Memory" },
+  { "id": 24, "x": 650, "y": 600, "label": "Emotional Recall", "group": "Memory" },
+  { "id": 25, "x": 580, "y": 680, "label": "Spatial Mapping", "group": "Memory" }
+]

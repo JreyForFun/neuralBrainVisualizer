@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Nueral Brain Visualizer</title>
+</head>
+<body>
+  <!-- Background / Mid - Brain Node Visualizer -->
+  <canvas id="neural-visual"></canvas>
+
+  <div id="ui-container">
+    <!-- Drag & Drop Data Screen -->
+    <div id="initializer-group" hidden>
+      <h2>Initialize Neural Map</h2>
+      <p>Drag and drop your data file here.</p>
+      <input type="file" id="data-input" accept=".json">
+    </div>
+
+    <!--
+      After inizializing screen
+      Dashboard screen of the canvas and nodes informatin
+    -->
+    <div id="dashboard-screen" >
+
+      <!-- Left Sidebar - Brain Nodes -->
+      <div id="brain-nodes">
+          <h3>Brain Nodes</h3>
+          <ul id="node-list"></ul>
+      </div>
+
+      <!-- Right Sidebar - Brain Node Data -->
+      <div id="brain-node-data">
+        <h3>Brain Node Datas</h3>
+          <div id="node-details">
+            <p>Click or Hover a node on the map to inspect.</p>
+          </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
