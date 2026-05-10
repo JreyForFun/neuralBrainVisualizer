@@ -1,0 +1,237 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+
+  .card {
+    width: 360px;
+    background: #eef4fb;
+    border-radius: 18px;
+    padding: 28px 24px 24px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    border: 0.5px solid #c0d5ec;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .corner {
+    position: absolute;
+    top: 0; right: 0;
+    width: 70px; height: 70px;
+    background: #cde0f4;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    border-radius: 0 18px 0 0;
+  }
+
+  .headline {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #0b3460;
+    margin: 0 0 4px;
+  }
+
+  .sub {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #0b3460;
+    margin: 0 0 14px;
+    line-height: 1.2;
+  }
+
+  .divider {
+    width: 32px;
+    height: 2px;
+    background: #3a88d4;
+    border-radius: 2px;
+    margin-bottom: 14px;
+  }
+
+  .sec-label {
+    font-size: 8.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #3a7fc1;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .role-block {
+    background: #ffffff;
+    border: 0.5px solid #bdd5ed;
+    border-radius: 11px;
+    padding: 11px 13px;
+    margin-bottom: 7px;
+  }
+
+  .role-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #0c3966;
+    margin-bottom: 3px;
+  }
+
+  .role-body {
+    font-size: 10.5px;
+    color: #3d6e9a;
+    line-height: 1.55;
+  }
+
+  .or-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 5px 0 8px;
+  }
+
+  .or-line { flex: 1; height: 0.5px; background: #bdd5ed; }
+  .or-txt { font-size: 8.5px; color: #5a88b3; letter-spacing: 0.08em; }
+
+  .ind-block {
+    background: #ffffff;
+    border: 0.5px solid #bdd5ed;
+    border-radius: 11px;
+    padding: 11px 13px;
+    margin-bottom: 10px;
+  }
+
+  .ind-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #0c3966;
+    margin-bottom: 5px;
+  }
+
+  .pill-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .pill {
+    background: #d9ecfc;
+    color: #145b9e;
+    font-size: 9.5px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 0.5px solid #a8ccea;
+  }
+
+  .grant-box {
+    background: #0d4d8a;
+    border-radius: 11px;
+    padding: 13px 14px;
+    margin-bottom: 12px;
+  }
+
+  .grant-amt {
+    font-family: 'Syne', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .grant-desc {
+    font-size: 10.5px;
+    color: #a8d0ef;
+    line-height: 1.6;
+  }
+
+  .cta-section {
+    background: #ffffff;
+    border: 0.5px solid #bdd5ed;
+    border-radius: 11px;
+    padding: 13px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .cta-main {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 11.5px;
+    color: #0b3460;
+    line-height: 1.35;
+  }
+
+  .dm-btn {
+    background: #1660b0;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 8px 13px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    color: #0b3460;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+</style>
+
+<div class="wrap">
+  <div class="card">
+    <div class="corner"></div>
+
+    <div class="headline">Looking for a LARPer for 2 Startups</div>
+    <div class="sub">FLEXI &amp; Agriculture-Based</div>
+
+    <div class="divider"></div>
+
+    <div class="sec-label">Need someone who</div>
+
+    <div class="role-block">
+      <div class="role-title">Knows Xcode &amp; Swift</div>
+      <div class="role-body">You don't need to be cracked — just able to read Swift code and orchestrate AI agents properly.</div>
+    </div>
+
+    <div class="role-block">
+      <div class="role-title">Wants to be a CMO</div>
+      <div class="role-body">You'll handle marketing, growth, branding, and all that fun chaos. (I'll still help when needed.)</div>
+    </div>
+
+    <div class="or-row">
+      <div class="or-line"></div>
+      <div class="or-txt">OR AN INDIVIDUAL</div>
+      <div class="or-line"></div>
+    </div>
+
+    <div class="ind-block">
+      <div class="ind-title">Individual Roles</div>
+      <div class="pill-wrap">
+        <div class="pill">Video Editor</div>
+        <div class="pill">Ads / Promotion / UGC</div>
+        <div class="pill">Graphic Designer</div>
+      </div>
+    </div>
+
+    <div class="grant-box">
+      <div class="grant-desc">We're also planning to apply for an upcoming ₱80K pre-seed grant from DA — enough to fund storage, testing, marketing, and development for a few months. If you like building weird ambitious stuff from zero</div>
+    </div>
+
+    <div class="footer">LET'S LARP 'TIL REAL</div>
+  </div>
+</div>
