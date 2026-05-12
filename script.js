@@ -82,7 +82,7 @@ function drawNeurons(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for(let i = 0; i < neurons.length; i++){
         for(let j = i + 1; j < neurons.length; j++){
-            let dx = neurons[i].x - neurons[j].x
+            let dx = neurons[i].x  - neurons[j].x
             let dy = neurons[i].y - neurons[j].y
             let distance = Math.sqrt(dx * dx + dy * dy);
 
