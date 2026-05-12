@@ -123,7 +123,7 @@ function drawNeurons() {
             ctx.fillStyle = '#ff007b'; // Highlight color
             ctx.shadowBlur = 20;
             ctx.shadowColor = '#ff007b';
-
+            
             // Auto-update the inspector panel if hovering
             showDetails(node);
         } else {
