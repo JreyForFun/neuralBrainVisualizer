@@ -115,15 +115,15 @@ function drawNeurons() {
         let dx = mouse.x - node.x;
         let dy = mouse.y - node.y;
         let distToMouse = Math.sqrt(dx * dx + dy * dy);
-        
+
         ctx.beginPath();
         ctx.arc(node.x, node.y, 6, 0, Math.PI * 2);
-        
+
         if (distToMouse < 15) {
             ctx.fillStyle = '#ff007b'; // Highlight color
             ctx.shadowBlur = 20;
             ctx.shadowColor = '#ff007b';
-            
+
             // Auto-update the inspector panel if hovering
             showDetails(node);
         } else {

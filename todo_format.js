@@ -19,11 +19,7 @@
 // -------------------------------------------------------------
 
 // your code here
-const canvas = document.getElementById(neural-visual);
-const ctx = canvas.getContent('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
 // -------------------------------------------------------------
 // TODO 2 — Grab the UI elements and declare global variables
@@ -40,14 +36,6 @@ canvas.height = window.innerHeight;
 // -------------------------------------------------------------
 
 // your code here
-const initializerGroup = document.getElementById('initializer-group');
-const dashboardScreen = document.getElementById('dashboard-screen');
-const dataInput = document.getElementById('data-input');
-const brainNodes = document.getElementById('brain-nodes');
-const nodeDetails = document.getElementById('node-details');
-
-let neurons = [];
-let mouse = {x:0, y:0 }
 
 // -------------------------------------------------------------
 // TODO 3 — Listen for a file being dragged over the window
@@ -63,10 +51,7 @@ let mouse = {x:0, y:0 }
 // -------------------------------------------------------------
 
 // your code here
-window.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    initializerGroup.classList.add('dragover');
-});
+
 
 // -------------------------------------------------------------
 // TODO 4 — Remove the highlight when the file leaves
@@ -76,9 +61,6 @@ window.addEventListener('dragover', (e) => {
 // -------------------------------------------------------------
 
 // your code here
-window.addEventListener('dragleave', () => {
-    initializerGroup.classList.remove('dragover');
-})
 
 // -------------------------------------------------------------
 // TODO 5 — Handle the actual file drop
@@ -104,23 +86,7 @@ window.addEventListener('dragleave', () => {
 // -------------------------------------------------------------
 
 // your code here
-window.addEventListener('drop', (e) => {
-    e.preventDefault();
-    initializerGroup.classList.remove('dragover');
-    const file = e.dataTransfer.files[0];
-    if(file && file.name.endsWith('.json')){
-        const reader = new FileReader();
 
-        reader.onload = (event) => {
-            const data = JSON.parse(event.target.result);
-            initializeMap(data);
-        } 
-        reader.readAsText(file)
-    }
-    else {
-        alert("Please drop a valid .json file data.");
-    }
-})
 
 // -------------------------------------------------------------
 // TODO 6 — Write the initializeMap function
@@ -142,22 +108,7 @@ window.addEventListener('drop', (e) => {
 //        li.onclick = () => showDetails(node)
 // -------------------------------------------------------------
 
-function initializeMap(data) {
-    initializerGroup.classList.add('hidden');
-    dashboardScreen.classList.remove('hidden');
 
-    neurons = data;
-
-    brainNodes.innerHTML = '';
-    neurons.forEach(bnode => {
-        let li = document.createElement('li');
-        li.innerText = bnode.label;
-        li.onclick = () => showDetails(bnode);
-        nodeList.appendChild(li);
-    })
-
-    animate();
-}
 
 
 // -------------------------------------------------------------
@@ -171,9 +122,7 @@ function initializeMap(data) {
 //        Use <p> and <strong> tags to structure the output.
 // -------------------------------------------------------------
 
-function showDetails(node) {
-    // your code here
-}
+
 
 
 // -------------------------------------------------------------
@@ -188,7 +137,6 @@ function showDetails(node) {
 
 // your code here
 
-
 // -------------------------------------------------------------
 // TODO 9 — Write the drawNeurons function
 //
@@ -197,8 +145,10 @@ function showDetails(node) {
 //
 //   STEP A — Clear the canvas each frame
 //     ctx.clearRect(0, 0, canvas.width, canvas.height)
-//
+
+
 //   STEP B — Draw lines between close nodes
+
 //     Loop through every unique pair (i, j) where j starts at i+1.
 //     For each pair, calculate distance using:
 //       dx = neurons[i].x - neurons[j].x
