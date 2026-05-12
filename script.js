@@ -49,13 +49,14 @@ function initializeMap(data) {
     dashboardScreen.classList.remove('hidden');
 
     neurons = data;
-
-    brainNodes.insertAdjacentHTML('beforeend', neurons.forEach(bnode => {
+    const nodeList = document.getElementById('node-list');
+    nodeList.innerHTML = '';
+    neurons.forEach(bnode => {
         let li = document.createElement('li');
         li.innerText = bnode.label;
         li.onclick = () => showDetails(bnode);
-        brainNodes.appendChild(li);
-    }));
+        nodeList.appendChild(li);
+    });
     
 
     animate();
@@ -82,13 +83,13 @@ function drawNeurons(){
     for(let i = 0; i < neurons.length; i++){
         for(let j = i + 1; j < neurons.length; j++){
             let dx = neurons[i].x - neurons[j].x
-            let dy = neurons[i].y - neurons[j].j
+            let dy = neurons[i].y - neurons[j].y
             let distance = Math.sqrt(dx * dx + dy * dy);
 
             if(distance < 250){
                 ctx.beginPath();
-                ctx.moveTo(neurons[i].x, neurons[j].y);
-                ctx.lineTo(neurons[i].y, neurons[j].y);
+                ctx.moveTo(neurons[i].x, neurons[i].y);
+                ctx.lineTo(neurons[j].x, neurons[j].y);
                 ctx.strokeStyle = `rgba(0, 242, 255, ${1 - distance/250}`
                 ctx.lineWidth = 1;
                 ctx.stroke();
@@ -105,50 +106,29 @@ function drawNeurons(){
         ctx.arc(node.x, node.y, 6, 0, Math.PI * 2);
 
         if(distToMouse < 15) {
-            ctx.fillStyle = '#ff007b';
+            ctx.fillStyle = '#6b8393';
             ctx.shadowBlur = 20;
-            ctx.shadowColor = `#ff007b`;
+            ctx.shadowColor = '#6b8393';
 
             showDetails(node);
         } else {
-            ctx.fillStyle = `#00f2ff`;
+            ctx.fillStyle = '#00f2ff';
             ctx.shadowBlur = 10;
-            ctx.shadowCOlor = `#00f2ff`;
+            ctx.shadowCColor = '#00f2ff';
         }
         ctx.fill();
         ctx.shadowBlur = 0;
-    })
+    });
 }
 
-
-// -------------------------------------------------------------
-// TODO 10 — Write the animate function
-//
-// WHAT:  Call drawNeurons(), then schedule the next frame using
-//        requestAnimationFrame(animate).
-//
-// WHY:   requestAnimationFrame runs your function ~60x per second,
-//        synced to the screen refresh. Better than setInterval because
-//        it pauses when the tab is hidden.
-//
-// NOTE:  animate() never truly calls itself — rAF just schedules it.
-// -------------------------------------------------------------
 
 function animate() {
-    // your code here
+    drawNeurons();
+    requestAnimationFrame(animate);
 }
 
 
-// -------------------------------------------------------------
-// TODO 11 — Handle window resize
-//
-// WHAT:  Add a 'resize' event listener on the window.
-//        Inside it, reset canvas.width and canvas.height
-//        to window.innerWidth and window.innerHeight.
-//
-// WHY:   The canvas does not resize automatically. Also note:
-//        setting canvas.width always clears it — but animate()
-//        will redraw everything on the next frame anyway.
-// -------------------------------------------------------------
-
-// your code here
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});

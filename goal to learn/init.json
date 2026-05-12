@@ -27,5 +27,40 @@
   { "id": 22, "x": 600, "y": 520, "label": "Amygdala", "group": "Memory" },
   { "id": 23, "x": 520, "y": 620, "label": "Episodic Storage", "group": "Memory" },
   { "id": 24, "x": 650, "y": 600, "label": "Emotional Recall", "group": "Memory" },
-  { "id": 25, "x": 580, "y": 680, "label": "Spatial Mapping", "group": "Memory" }
+  { "id": 25, "x": 580, "y": 680, "label": "Spatial Mapping", "group": "Memory" },
+  { "id": 26, "x": 220, "y": 90,  "label": "Language Comprehension",  "group": "Language" },
+{ "id": 27, "x": 260, "y": 110, "label": "Broca Area",             "group": "Language" },
+{ "id": 28, "x": 200, "y": 60,  "label": "Syntax Processor",       "group": "Language" },
+{ "id": 29, "x": 120, "y": 180, "label": "Auditory Cortex",        "group": "Auditory" },
+{ "id": 30, "x": 160, "y": 220, "label": "Speech Perception",      "group": "Auditory" },
+
+{ "id": 31, "x": 980, "y": 220, "label": "Face Area",              "group": "Visual" },
+{ "id": 32, "x": 1020,"y": 260, "label": "Object Recognition",     "group": "Visual" },
+{ "id": 33, "x": 920, "y": 140, "label": "Visual Attention",       "group": "Visual" },
+
+{ "id": 34, "x": 420, "y": 420, "label": "Attention Network",      "group": "Attention" },
+{ "id": 35, "x": 480, "y": 440, "label": "Executive Control",      "group": "Executive" },
+{ "id": 36, "x": 360, "y": 480, "label": "Decision Integrator",    "group": "Executive" },
+
+{ "id": 37, "x": 740, "y": 120, "label": "Olfactory Bulb",        "group": "Olfactory" },
+{ "id": 38, "x": 760, "y": 160, "label": "Smell Processing",       "group": "Olfactory" },
+
+{ "id": 39, "x": 300, "y": 520, "label": "Reward Center",          "group": "Emotion" },
+{ "id": 40, "x": 340, "y": 560, "label": "Dopamine Pathway",       "group": "Emotion" },
+
+{ "id": 41, "x": 860, "y": 680, "label": "Visual Memory",         "group": "Memory" },
+{ "id": 42, "x": 940, "y": 700, "label": "Long-term Storage",     "group": "Memory" },
+
+{ "id": 43, "x": 60,  "y": 620, "label": "Autonomic Center",       "group": "Homeostasis" },
+{ "id": 44, "x": 100, "y": 660, "label": "Temperature Reg.",       "group": "Homeostasis" },
+
+{ "id": 45, "x": 560, "y": 100, "label": "Anterior Cingulate",     "group": "Emotion" },
+{ "id": 46, "x": 600, "y": 140, "label": "Conflict Monitor",       "group": "Emotion" },
+
+{ "id": 47, "x": 1100,"y": 340, "label": "Spatial Navigator",      "group": "Spatial" },
+{ "id": 48, "x": 1060,"y": 380, "label": "Path Planning",          "group": "Spatial" },
+
+{ "id": 49, "x": 440, "y": 640, "label": "Pattern Extractor",      "group": "Cognitive" },
+{ "id": 50, "x": 500, "y": 700, "label": "Concept Map",           "group": "Cognitive" }
+
 ]
