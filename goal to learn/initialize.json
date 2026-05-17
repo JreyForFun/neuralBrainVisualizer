@@ -1,7 +1,0 @@
-[
-  { "id": 1, "x": 400, "y": 300, "label": "Motor Cortex", "group": "Output" },
-  { "id": 2, "x": 550, "y": 400, "label": "Sensory Input", "group": "Input" },
-  { "id": 3, "x": 350, "y": 500, "label": "Memory Bank A", "group": "Storage" },
-  { "id": 4, "x": 700, "y": 350, "label": "Logic Core", "group": "Processing" },
-  { "id": 5, "x": 600, "y": 600, "label": "Visual Cortex", "group": "Input" }
-]
